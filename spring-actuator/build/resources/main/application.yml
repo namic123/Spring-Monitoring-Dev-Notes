@@ -4,6 +4,8 @@ management:
       enabled: true
     os:
       enabled: true
+    env:
+      enabled: true
   endpoint:
    shutdown:
       enabled: true
@@ -14,3 +16,8 @@ management:
     web:
       exposure:
         include: "*"
+
+info:
+  app:
+    name: hello-actuator
+    company: Jay

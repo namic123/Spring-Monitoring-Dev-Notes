@@ -3,7 +3,8 @@ management:
    shutdown:
       enabled: true
    health:
-     show-details: always
+     show-components: always
+  #     show-details: always
   endpoints:
     web:
       exposure:

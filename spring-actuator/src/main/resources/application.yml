@@ -1,7 +1,7 @@
 management:
   endpoint:
    shutdown:
-      enabled: true
+      enabled: false
   endpoints:
     web:
       exposure:

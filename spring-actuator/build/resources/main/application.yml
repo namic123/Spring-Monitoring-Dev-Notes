@@ -7,7 +7,7 @@ management:
     env:
       enabled: true
   server:
-    port: 9292
+    port: 8080
   endpoint:
    shutdown:
       enabled: true

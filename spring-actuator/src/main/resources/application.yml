@@ -12,7 +12,7 @@ management:
    shutdown:
       enabled: true
    health:
-     show-components: always
+     show-components: always # 이 부분이 다름
   #     show-details: always
   endpoints:
     web:

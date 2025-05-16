@@ -24,9 +24,9 @@ info:
     name: hello-actuator
     company: Jay
 
-logging:
-  level:
-    hello.controller: debug
+#logging:
+#  level:
+#    hello.controller: debug
 
 server:
   tomcat:

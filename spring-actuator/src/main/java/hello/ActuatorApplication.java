@@ -14,6 +14,8 @@ public class ActuatorApplication {
 
     @Bean
     public InMemoryHttpExchangeRepository httpExchangeRepository() {
-        return new InMemoryHttpExchangeRepository();
+        InMemoryHttpExchangeRepository repo = new InMemoryHttpExchangeRepository();
+        repo.setCapacity(200); // 최대 저장 요청 수를 200개로 설정
+        return repo;
     }
 }

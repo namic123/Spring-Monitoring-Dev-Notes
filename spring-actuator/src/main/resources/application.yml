@@ -18,7 +18,7 @@ management:
     web:
       exposure:
         include: "*"
-      base-path: "/jay-manage"
+#      base-path: "/jay-manage" - actuator path 변경
 
 info:
   app:

@@ -7,23 +7,29 @@ management:
     env:
       enabled: true
   server:
-    port: 8080
+    port: 9292
   endpoint:
    shutdown:
       enabled: true
    health:
-     show-components: always
+     show-components: always # 이 부분이 다름
   #     show-details: always
   endpoints:
     web:
       exposure:
         include: "*"
+#      base-path: "/jay-manage" - actuator path 변경
 
 info:
   app:
     name: hello-actuator
     company: Jay
 
-logging:
-  level:
-    hello.controller: debug
+#logging:
+#  level:
+#    hello.controller: debug
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true

@@ -21,7 +21,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health, info, prometheus
 #      base-path: "/jay-manage" - actuator path 변경
 
 info:

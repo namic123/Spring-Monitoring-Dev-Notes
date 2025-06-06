@@ -46,4 +46,11 @@ public class TestController {
         log.info("connection info={}", conn);
         return "ok";
     }
+
+    @GetMapping("/error-log")
+    public String errorLog() {
+        log.error("error log");
+        return "error";
+    }
+
 }
